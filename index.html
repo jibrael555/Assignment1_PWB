@@ -1,21 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard - E-Learning Universitas Impian</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <div class="logo">E-Learning</div>
-            <div class="#">Universitas Impian</div>
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Daftar Mahasiswa</a></li>
-            </ul>
-        </nav>
-        <sectio class="Dashboard" id="Dashboard">
+
+    <nav class="navbar navbar-dark bg-dark px-4 py-2">
+        <a class="navbar-brand d-flex align-items-center m-0" href="index.html">
+            <div class="logo-box me-2">
+                <img src="assets.img/Logo.png" alt="Logo" width="30" height="30" style="object-fit: contain;">
+            </div>
+            <div class="lh-1">
+                <span style="font-size: 11px; display: block; color: #ccc;">E-Learning</span>
+                <span style="font-size: 14px; font-weight: bold;">Universitas Impian</span>
+            </div>
+        </a>
+        <div class="navbar-nav flex-row ms-4">
+            <a class="nav-link active px-3" href="index.html">Dashboard</a>
+            <a class="nav-link px-3 text-secondary" href="dmahasiswa.html">Daftar Mahasiswa</a>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            
+            <div class="col">
+                <div class="card h-100 shadow-sm course-card">
+                    <img src="assets.img/Gambar-Web.jpg" class="card-img-top" alt="Web Dasar">
+                    <div class="card-body d-flex flex-column">
+                        <p class="text-muted small mb-1">S1 Informatika</p>
+                        <h6 class="card-title text-primary fw-bold mb-3" style="font-size: 14px;">Praktikum Pemrograman Web</h6>
+                        <div class="mt-auto">
+                            <a href="detail-web.html" class="btn btn-secondary btn-sm w-100 text-white" style="background-color: #6c757d;">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm course-card">
+                    <img src="assets.img/Gambar-Strukdat.jpg" class="card-img-top" alt="Struktur Data">
+                    <div class="card-body d-flex flex-column">
+                        <p class="text-muted small mb-1">S1 Informatika</p>
+                        <h6 class="card-title text-primary fw-bold mb-3" style="font-size: 14px;">Praktikum Implementasi Struktur Data</h6>
+                        <div class="mt-auto">
+                            <a href="#" class="btn btn-secondary btn-sm w-100 text-white" style="background-color: #6c757d;">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm course-card">
+                    <img src="assets.img/Gambar-Jarkom.jpg" class="card-img-top" alt="Jaringan Komputer">
+                    <div class="card-body d-flex flex-column">
+                        <p class="text-muted small mb-1">S1 Informatika</p>
+                        <h6 class="card-title text-primary fw-bold mb-3" style="font-size: 14px;">Praktikum Jaringan Komputer</h6>
+                        <div class="mt-auto">
+                            <a href="#" class="btn btn-secondary btn-sm w-100 text-white" style="background-color: #6c757d;">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm course-card">
+                    <img src="assets.img/Gambar-Alpro.jpg" class="card-img-top" alt="Algoritma">
+                    <div class="card-body d-flex flex-column">
+                        <p class="text-muted small mb-1">S1 Informatika</p>
+                        <h6 class="card-title text-primary fw-bold mb-3" style="font-size: 14px;">Praktikum Algoritma dan Pemrograman</h6>
+                        <div class="mt-auto">
+                            <a href="#" class="btn btn-secondary btn-sm w-100 text-white" style="background-color: #6c757d;">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm course-card">
+                    <img src="assets.img/Gambar-Basdat.png" class="card-img-top" alt="Basis Data">
+                    <div class="card-body d-flex flex-column">
+                        <p class="text-muted small mb-1">S1 Informatika</p>
+                        <h6 class="card-title text-primary fw-bold mb-3" style="font-size: 14px;">Praktikum Implementasi Basis Data</h6>
+                        <div class="mt-auto">
+                            <a href="#" class="btn btn-secondary btn-sm w-100 text-white" style="background-color: #6c757d;">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
 </body>
 </html>
